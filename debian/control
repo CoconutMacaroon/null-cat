@@ -1,0 +1,15 @@
+Source: null-cat
+Section: python
+Maintainer: Arjun VedBrat <arjunvedbrat@gmail.com>
+Build-Depends: debhelper (>= 7),
+               python3 (>= 3.5)
+Standards-Version: 3.9.2
+X-Python-Version: >= 3.5
+
+
+Package: null-cat
+Architecture: all
+Section: python
+Depends: python-appindicator, python3 (>=3.5)
+Description: Print characters from a file until a null character is reached
+ null-cat prints (to stdout) the contents of the first argument given. It does this character-by-character. It stops when a null character (\0) is reached. It will not print the null character.

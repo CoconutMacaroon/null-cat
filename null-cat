@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import sys
+
+def null_cat(path: str):
+    """Reads file at path, and prints the output. Stops when a null character is reached. This will not print the null character."""
+    f = open('/dev/sdb', 'r')
+
+    while True:
+        ch = f.read(1)
+        if ch == '\0': break
+        print(ch, end='')
+
+if __name__ == "__main__":
+    try:
+        null_cat(sys.argv[1])
+    except IndexError:
+        print("You need to provide the path to the file you want to print")
