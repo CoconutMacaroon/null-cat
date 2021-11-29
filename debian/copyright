@@ -1,7 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
-Copyright: 2021 Arjun VedBrat
+Copyright: 2021 Arjun VedBrat <arjunvedbrat@gmail.com>
+License: MIT-License
 
 Files: debian/*
 Copyright: 2021 Arjun VedBrat <arjunvedbrat@gmail.com>
