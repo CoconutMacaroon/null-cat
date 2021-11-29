@@ -7,7 +7,8 @@ def null_cat(path: str):
 
     while True:
         ch = f.read(1)
-        if ch == '\0': break
+        if ch == '\0':
+            break
         print(ch, end='')
 
 if __name__ == "__main__":
